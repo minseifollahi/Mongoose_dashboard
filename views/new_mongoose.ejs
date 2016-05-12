@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mongoose</title>
+</head>
+<body>
+	<h1>Add New Mongoose</h1>
+	<!-- display errors here -->
+	<%= errors %>
+	<form action="/mongooses" method="post">
+		<div>
+			<label for="">Mongoose Name: </label>
+			<input type="text" name="name" id="">
+		</div>
+		<div>
+			<label for="">Mongoose Weight: </label>
+			<input type="text" name="weight" id="">
+		</div>
+		<div>
+			<label for="">Mongoose Color: </label>
+			<input type="text" name="color" id=""> 
+		</div>
+		<input type="submit" value="Add Mongoose">
+	</form>
+	<button><a href="/">Back</a></button>
+</body>
+</html>

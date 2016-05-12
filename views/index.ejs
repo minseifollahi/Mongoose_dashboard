@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mongoose</title>
+</head>
+<body>
+	<h1>Welcome to Mongoose</h1>
+	 <% for (var x in mongooses) { %>
+        <ul>
+          <li><a href="/mongooses/<%= mongooses[x]._id %>">Name: <%= mongooses[x].name %></a></li>
+          <li>Weight: <%= mongooses[x].weight %></li>
+          <li>Color: <%= mongooses[x].color %></li>
+        </ul>
+           
+       <form action="/mongooses/<%= mongooses[x]._id %>/destroy" method="post">
+       		<input type="submit" value="Delete">
+       </form>
+        <hr>
+ 	 <% } %>
+	<button><a href="/mongooses/new">Add new Mongoose!</a></button>
+</body>
+</html>

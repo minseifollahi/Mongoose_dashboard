@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mongoose</title>
+</head>
+<body>
+	   <ul>
+	   		<li> Name: <%= mongoose.name %> </li>
+	   		<li> Weight: <%= mongoose.weight %> </li>
+	   		<li> Color: <%= mongoose.color %></li>
+	   </ul>
+       <hr>
+	<button><a href="/mongooses/<%= mongoose._id %>/edit">Edit</a></button>
+	<button><a href="/">Back</a></button>
+</body>
+</html>
